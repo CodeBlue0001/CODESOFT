@@ -7,6 +7,8 @@ def add():
 def chat_response(userInput):
     if userInput=='what is your name' or userInput=='who are you':
         return("I am a Ruled based chatbot \n I can answer some preseted questions only. ")
+    elif userInput=='what can you do':
+        print("I can Sum two number. I can substruct two numbers and some minor operations")
     elif userInput=='can you sum two numbers':
         print("Yes, I can .\n Do you want sum two digits? (write Yes/No)\n")
         option=input(str("... "))
