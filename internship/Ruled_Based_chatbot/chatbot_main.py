@@ -12,7 +12,9 @@ def add():
     return c
 
 def sub():
-    pass
+    a= input("Enter first number:")
+    b=input("Enter second number:")
+    return a-b
 
 def chat_response(userInput):
     if userInput == 'what is your name' or userInput == 'who are you':
