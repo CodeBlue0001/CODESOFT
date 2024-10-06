@@ -6,10 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    <div>Teachable Machine Image Model</div>
+
+
+    <h3>Image recognition Model </h3>
+    
+    <div class="container">
+        <div id="webcam-container"></div>
+        <div id="label-container"></div>
+    </div>
     <button type="button" onclick="init()">Start</button>
-    <div id="webcam-container"></div>
-    <div id="label-container"></div>
+    
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
     <script type="text/javascript">
@@ -66,7 +72,21 @@
         }
     </script>
    
-
+<style>
+    .container{
+        color: black;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        border: 1px solid black;
+        width: fit-content;
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+</style>
     
 </body>
 </html>
